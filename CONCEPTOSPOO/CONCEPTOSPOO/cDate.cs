@@ -44,7 +44,7 @@ namespace CONCEPTOSPOO
         //metodo paa checar mes y excepcion.
         private int CheckMonth(int month)
         {
-            if (month < 1 && month <= 12)
+            if (month > 1 && month <= 12)
             {
                 return month;
             }

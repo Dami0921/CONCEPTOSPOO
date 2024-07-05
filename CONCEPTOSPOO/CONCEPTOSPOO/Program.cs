@@ -3,16 +3,26 @@
 Console.WriteLine("CONCEPTOS POO");
 Console.WriteLine("==============");
 
-//instanciamos objeto
-//guardamos la inpresion de las fechas en in try catch.
-
-try
+CEmployee emplpyee1 = new CSalaryEmployee()
 {
-	Console.WriteLine(new cDate(2024, 2, 29));
-	Console.WriteLine(new cDate(2004, 6, 9));
-	Console.WriteLine(new cDate(1985, 18, 45));
-}
-catch (Exception error)
+    id = 1133,
+    FirstName = "Damian",
+    LastName = "Correa",
+    BirthDate = new cDate(2004, 7, 8),
+    HiringDate = new cDate(2023, 9, 15),
+    IsActive = true,
+    Salary = 1357000,
+};
+Console.WriteLine(emplpyee1);
+CEmployee emplpyee2 = new CComissionEmployee()
 {
-	Console.WriteLine(error.Message);
-}
+    id = 1111,
+    FirstName = "Isabella",
+    LastName = "Perez",
+    BirthDate = new cDate(2005, 4, 5),
+    HiringDate = new cDate(2023, 4, 25),
+    IsActive = true,
+    ComissionPercentaje = 0.03F,
+    sales = 320000000,
+};
+Console.WriteLine(emplpyee2);
